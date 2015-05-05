@@ -1,0 +1,49 @@
+
+body {
+  font-family: "HelveticaNeue";
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+}
+
+header {
+  margin: 0;
+  padding: 50px;
+  color: #000;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  margin: 50px;
+}
+
+button{
+  background-color: #efefef;
+  padding: 10px;
+  color: #000;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #BBBBBB;
+  margin: 5px;
+  box-shadow: 0 6px #BBBBBB;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  position: relative;
+  outline: none;
+}
+
+button:hover{
+	box-shadow: 0 4px #bbb;
+	top: 2px;
+}
+
+button:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+}
