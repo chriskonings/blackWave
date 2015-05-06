@@ -1,18 +1,13 @@
 
 
 //Array of API's to be randomised
-var selectAPI = ["Wordpress", "Javsacript Only", "Responsive", "Prioritise Speed"];
+var selectAPI = ["Wordpress", "GitHub", "Twitter", "MailJet"];
 
 //randomise function
 var pickANAPI = function () {
 	//randomise between the 4 array items
 	var chosenAPI = selectAPI[Math.floor(Math.random() * 4)];
-	
-
-	$("#hello span").text(function(index, text) {
-		alert(chosenAPI);
-		return text.replace('British Pound', 'GBP');
-	});
+	document.getElementById("APIString").textContent=chosenAPI;
 };
 
 
@@ -23,7 +18,7 @@ var selectPriority = ["Speed", "Design", "Functionality", "Cross-Platform Compat
 var pickAPriority = function () {
 	//randomise between the 4 array items
 	var chosenPriority = selectPriority[Math.floor(Math.random() * 4)];
-	alert(chosenPriority);
+	document.getElementById("priorityString").textContent=chosenPriority;
 };
 
 
