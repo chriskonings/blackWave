@@ -47,3 +47,65 @@ button:active {
 	box-shadow: 0 0 #ab3c3c;
 	top: 6px;
 }
+
+select{
+  border: 5px transparent solid;
+  font-size: 24px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 5px;
+  background: #f5f5f5 url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat 200px center;
+  width: 250px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+#blackwavelogo{width: 150px;}
+
+.answer{
+  font-size: 1.5em;
+  width: 100%;
+  text-align: center;
+}
+
+.dropChoice{
+  width: 50%;
+  float: left;
+  margin: 0 auto;
+}
+
+.dropChoice span{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.dropChoice span select{
+  display: block;
+  clear: both;
+}
+
+
+@media (max-width: 850px) {
+  .dropChoice {
+    width: 100%;
+    clear: both;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,24 +1,27 @@
 extends layout
 
 block header
+  svg#blackwavelogo(version='1.1', x='0px', y='0px', viewbox='0 0 50 50', enable-background='new 0 0 50 50', xml:space='preserve')
+    path(d='M0.5,42c0,0,4.8-33.1,48.9-34.4c0,0-24.9,18.4,0,34.4H0.5z')
+      path(fill='#1A1A1A', d='M10.5,42c0,0,3.8-33.1,38.9-34.4c0,0-19.9,18.4,0,34.4H10.5z')
   h1= title
   p Welcome to #{title}, are you up for a challenge?
   <a href="about">about</a>
 
 
 block content
-  
-  h1 Choose Role: <select><option value="visual">Visual Design</option><option value="UX">UX Design</option><option value="Front-End">Front-End Dev</option><option value="Back-End">Back-End Dev</option></select>
 
-  h1 Choose Skill Level: <select><option value="junior">Junior</option><option value="middle-weight">Middle-Weight</option><option value="Senior">Senior</option></select>
+  section(class="dropChoice")
+    span What's Your Role? <select><option value="visual">...</option><option value="visual">Visual Design</option><option value="UX">UX Design</option><option value="Front-End">Front-End Dev</option><option value="Back-End">Back-End Dev</option></select>
+  section(class="dropChoice")
+    span What's Your Skill Level? <select><option value="junior">...</option><option value="junior">Junior</option><option value="middle-weight">Middle-Weight</option><option value="Senior">Senior</option></select>
 
-  br
+  p
 
   button(onclick='pickANAPI()') Choose API
   button(onclick='pickAPriority()') Choose Priority
 
   
   h2 Your challenge, should you choose to accept it is to: 
-  h3 Make a product using the <div id="APIString" >___________</div> API, whilst making <div id="priorityString" >_________</div> a priority.
+  h3(class="answer") Make a product using the <span id="APIString" >___________</span> API, whilst making <span id="priorityString" >_________</span> a priority.
     
- 
