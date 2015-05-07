@@ -93,6 +93,18 @@ select{
 
 .choiceBlock{text-align:center;margin: 20px auto;}
 
+#wave {
+  -webkit-animation-name: 'wave_anim';
+  -webkit-animation-duration: 2000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes wave_anim {
+  0% { fill:#000; }
+  50% { fill:#343434; }
+  100% { fill:#000; }
+}
 
 @media (max-width: 850px) {
   .choiceSplit {
