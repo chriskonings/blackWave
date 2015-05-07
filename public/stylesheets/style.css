@@ -21,6 +21,11 @@ main {
   margin: 50px;
 }
 
+a{color:black; font-weight: bold;}
+
+a:hover{color:#dadada;}
+
+
 button{
   background-color: #efefef;
   padding: 10px;
@@ -69,29 +74,31 @@ select{
   text-align: center;
 }
 
-.dropChoice{
+.choiceSplit{
   width: 50%;
   float: left;
-  margin: 0 auto;
+  margin: 20px auto;
+  text-align: center;
 }
 
-.dropChoice span{
+.choiceSplit span{
   font-size: 2em;
   font-weight: bold;
 }
 
-.dropChoice span select{
+.choiceSplit span select{
   display: block;
   clear: both;
 }
 
+.choiceBlock{text-align:center;margin: 20px auto;}
+
 
 @media (max-width: 850px) {
-  .dropChoice {
+  .choiceSplit {
     width: 100%;
     clear: both;
     display: block;
-    margin: 0 auto;
   }
 }
 

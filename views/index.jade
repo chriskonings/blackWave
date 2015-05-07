@@ -6,22 +6,32 @@ block header
       path(fill='#1A1A1A', d='M10.5,42c0,0,3.8-33.1,38.9-34.4c0,0-19.9,18.4,0,34.4H10.5z')
   h1= title
   p Welcome to #{title}, are you up for a challenge?
-  <a href="about">about</a>
+  <a href="about">About</a>
 
 
 block content
 
-  section(class="dropChoice")
-    span What's Your Role? <select><option value="visual">...</option><option value="visual">Visual Design</option><option value="UX">UX Design</option><option value="Front-End">Front-End Dev</option><option value="Back-End">Back-End Dev</option></select>
-  section(class="dropChoice")
-    span What's Your Skill Level? <select><option value="junior">...</option><option value="junior">Junior</option><option value="middle-weight">Middle-Weight</option><option value="Senior">Senior</option></select>
+  section(class="choiceSplit")
+    span What's Your Role? 
+    section
+      button(onclick='#') Visual 
+      button(onclick='#') UX 
+      button(onclick='#') Front-End
+  section(class="choiceSplit")
+    span What's Your Skill Level? 
+    section
+      button(onclick='#') Junior
+      button(onclick='#') Middle-Weight
+      button(onclick='#') Senior
 
-  p
 
-  button(onclick='pickANAPI()') Choose API
-  button(onclick='pickAPriority()') Choose Priority
+  section(class="choiceBlock")
+    button(onclick='pickANAPI()') Choose API
 
-  
-  h2 Your challenge, should you choose to accept it is to: 
-  h3(class="answer") Make a product using the <span id="APIString" >___________</span> API, whilst making <span id="priorityString" >_________</span> a priority.
-    
+  section(class="choiceBlock")
+    button(onclick='pickAPriority()') Choose Priority
+
+  section(class="choiceBlock")
+    h2 Your challenge, should you choose to accept it is to: 
+    h3(class="answer") Make a product using the <span id="APIString" >___________</span> API, whilst making <span id="priorityString" >_________</span> a priority.
+      
