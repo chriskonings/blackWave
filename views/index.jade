@@ -6,24 +6,22 @@ block header
       path(fill='#1A1A1A', d='M10.5,42c0,0,3.8-33.1,38.9-34.4c0,0-19.9,18.4,0,34.4H10.5z')
   h1= title
   p Welcome to #{title}, are you up for a challenge?
-  <a href="about">About</a>
-
+  a(href="about") About
 
 block content
 
   section(class="choiceSplit")
-    span What's Your Role? 
+    span What's Your Role?
     section
-      button(onclick='#') Visual 
-      button(onclick='#') UX 
+      button(onclick='#') Visual
+      button(onclick='#') UX
       button(onclick='#') Front-End
   section(class="choiceSplit")
-    span What's Your Skill Level? 
+    span What's Your Skill Level?
     section
       button(onclick='#') Junior
       button(onclick='#') Middle-Weight
       button(onclick='#') Senior
-
 
   section(class="choiceBlock")
     button(onclick='pickANAPI()') Choose API
@@ -32,6 +30,6 @@ block content
     button(onclick='pickAPriority()') Choose Priority
 
   section(class="choiceBlock")
-    h2 Your challenge, should you choose to accept it is to: 
+    h2 Your challenge, should you choose to accept it is to:
     h3(class="answer") Make a product using the <span id="APIString" >___________</span> API, whilst making <span id="priorityString" >_________</span> a priority.
-      
+
